@@ -81,16 +81,18 @@ MathWhiz/
 ## Application Screenshots
 
 ### Welcome Page
-![Welcome Page](screenshots/home.png)
+<img width="1882" height="970" alt="Screenshot 2026-11-13 230638" src="https://github.com/user-attachments/assets/d0b2507e-6763-4ea8-aafc-8ebaa22dc1fc" />
+
 
 ### Game Page
-![Game Page](screenshots/game.png)
+<img width="1487" height="913" alt="Screenshot 2026-11-13 230915" src="https://github.com/user-attachments/assets/b2acb9f9-6878-485f-8219-63a70f3ccd19" />
+
 
 ### Result Page
-![Result Page](screenshots/result.png)
+<img width="1197" height="771" alt="Screenshot 2026-11-13 231014" src="https://github.com/user-attachments/assets/27d7b9dc-c4f7-4b90-bd6f-bb95f7b8a33c" />
 
 ### Leaderboard
-![Leaderboard](screenshots/leaderboard.png)
+<img width="1422" height="667" alt="Screenshot 2026-11-13 231058" src="https://github.com/user-attachments/assets/dc1325cb-d003-48d7-be52-deca37468ac8" />
 
 ## GitHub Project Directory
 https://github.com/username/repository/tree/main/MathWhiz
