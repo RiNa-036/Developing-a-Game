@@ -1,6 +1,0 @@
-<%@ page import="java.util.*,com.rina.model.GameQuestion" contentType="text/html;charset=UTF-8" %>
-<% List<GameQuestion> qs=(List<GameQuestion>)request.getAttribute("questions"); List<Boolean> checks=(List<Boolean>)request.getAttribute("correctList"); %>
-<!DOCTYPE html><html><head><title>Math Whiz Result</title><link rel="stylesheet" href="css/style.css"></head><body><main class="card">
-<div class="badge">GAME COMPLETED</div><h1>Well played, <%=String.valueOf(request.getAttribute("playerName")).replace("&","&amp;").replace("<","&lt;").replace(">","&gt;")%>!</h1><div class="bigscore"><%=request.getAttribute("score")%><small> / 10</small></div>
-<% for(int i=0;i<qs.size();i++){GameQuestion q=qs.get(i); %><p class="<%=checks.get(i)?"success":"error"%>">Question <%=i+1%>: <%=checks.get(i)?"Correct":"Incorrect"%> (+<%=checks.get(i)?q.getMarks():0%> marks)</p><% } %>
-<p class="muted"><%=request.getAttribute("saveMessage")%></p><a class="link" href="leaderboard">View Leaderboard</a> · <a class="link" href="./">Play Again</a></main></body></html>
