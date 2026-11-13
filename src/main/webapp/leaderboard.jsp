@@ -1,0 +1,6 @@
+<%@ page import="java.util.*,com.rina.model.GameResult" contentType="text/html;charset=UTF-8" %>
+<% List<GameResult> scores=(List<GameResult>)request.getAttribute("scores"); %>
+<!DOCTYPE html><html><head><title>Leaderboard</title><link rel="stylesheet" href="css/style.css"></head><body><main class="card wide"><div class="badge">HALL OF FAME</div><h1>Top 10 Leaderboard</h1>
+<% if(request.getAttribute("dbError")!=null){%><p class="error"><%=request.getAttribute("dbError")%></p><%} else if(scores==null||scores.isEmpty()){%><p class="muted">No scores yet. Be the first player!</p><%}else{%>
+<table><tr><th>#</th><th>Player</th><th>Score</th><th>Level</th><th>Played at</th></tr><%int n=1;for(GameResult r:scores){%><tr><td><%=n++%></td><td><%=r.getPlayerName().replace("&","&amp;").replace("<","&lt;").replace(">","&gt;")%></td><td><b><%=r.getScore()%>/10</b></td><td><%=r.getDifficulty()%></td><td><%=r.getPlayedAt()%></td></tr><%}%></table><%}%>
+<a class="link" href="./">← Back to Home</a></main></body></html>
