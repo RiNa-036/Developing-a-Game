@@ -1,1 +1,0 @@
-Add home.png, game.png, result.png and leaderboard.png here before submitting.
